@@ -14,40 +14,177 @@
   <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-database.js"></script>
   <script src="configuracao-firebase.js"></script>
 
-  <section class="container container_pequeno">
-    <div class="grade">
-      <div class="grade__linha">
-        <div class="grade__coluna">
-          <h1 class="titulo">Checklist das funcionalidades do PapelZero</h1>
-        </div>
+  <section class="container container_grande container_com-fundo container_com-margem">
+    <h2 class="titulo">Selecione as opções que mais te agrada:</h2>
 
-        <div class="grade__coluna grade__coluna_estreita">
-          <button class="botao botao_contorno" onclick="desmarcarTodos()">
-            Desmarcar Tudo
-          </button>
+    <ul class="grupo-de-imagens">
+      <li class="grupo-de-imagens__item">
+        <img class="grupo-de-imagens__imagem" src="imagens/img1.png" alt="">
+        <label class="formulario__radio-container">
+          <input name="img1" id="img1-sim" onclick="marcarItem(this)" type="radio">Gostei!
+        </label>
+        <label class="formulario__radio-container">
+          <input name="img1" id="img1-nao" onclick="marcarItem(this)" type="radio">Não gostei
+        </label>
+      </li>
+      <li class="grupo-de-imagens__item">
+        <img class="grupo-de-imagens__imagem" src="imagens/img2.png" alt="">
+        <label class="formulario__radio-container">
+          <input name="img2" id="img2-sim" onclick="marcarItem(this)" type="radio">Gostei!
+        </label>
+        <label class="formulario__radio-container">
+          <input name="img2" id="img2-nao" onclick="marcarItem(this)" type="radio">Não gostei
+        </label>
+      </li>
+      <li class="grupo-de-imagens__item">
+        <img class="grupo-de-imagens__imagem" src="imagens/img3.png" alt="">
+        <label class="formulario__radio-container">
+          <input name="img3" id="img3-sim" onclick="marcarItem(this)" type="radio">Gostei!
+        </label>
+        <label class="formulario__radio-container">
+          <input name="img3" id="img3-nao" onclick="marcarItem(this)" type="radio">Não gostei
+        </label>
+      </li>
+      <li class="grupo-de-imagens__item">
+        <img class="grupo-de-imagens__imagem" src="imagens/img4.png" alt="">
+        <label class="formulario__radio-container">
+          <input name="img4" id="img4-sim" onclick="marcarItem(this)" type="radio">Gostei!
+        </label>
+        <label class="formulario__radio-container">
+          <input name="img4" id="img4-nao" onclick="marcarItem(this)" type="radio">Não gostei
+        </label>
+      </li>
+      <li class="grupo-de-imagens__item">
+        <img class="grupo-de-imagens__imagem" src="imagens/img5.png" alt="">
+        <label class="formulario__radio-container">
+          <input name="img5" id="img5-sim" onclick="marcarItem(this)" type="radio">Gostei!
+        </label>
+        <label class="formulario__radio-container">
+          <input name="img5" id="img5-nao" onclick="marcarItem(this)" type="radio">Não gostei
+        </label>
+      </li>
+      <li class="grupo-de-imagens__item">
+        <img class="grupo-de-imagens__imagem" src="imagens/img6.png" alt="">
+        <label class="formulario__radio-container">
+          <input name="img6" id="img6-sim" onclick="marcarItem(this)" type="radio">Gostei!
+        </label>
+        <label class="formulario__radio-container">
+          <input name="img6" id="img6-nao" onclick="marcarItem(this)" type="radio">Não gostei
+        </label>
+      </li>
+      <li class="grupo-de-imagens__item">
+        <img class="grupo-de-imagens__imagem" src="imagens/img7.png" alt="">
+        <label class="formulario__radio-container">
+          <input name="img7" id="img7-sim" onclick="marcarItem(this)" type="radio">Gostei!
+        </label>
+        <label class="formulario__radio-container">
+          <input name="img7" id="img7-nao" onclick="marcarItem(this)" type="radio">Não gostei
+        </label>
+      </li>
+      <li class="grupo-de-imagens__item">
+        <img class="grupo-de-imagens__imagem" src="imagens/img8.png" alt="">
+        <label class="formulario__radio-container">
+          <input name="img8" id="img8-sim" onclick="marcarItem(this)" type="radio">Gostei!
+        </label>
+        <label class="formulario__radio-container">
+          <input name="img8" id="img8-nao" onclick="marcarItem(this)" type="radio">Não gostei
+        </label>
+      </li>
+      <li class="grupo-de-imagens__item">
+        <img class="grupo-de-imagens__imagem" src="imagens/img9.png" alt="">
+        <label class="formulario__radio-container">
+          <input name="img9" id="img9-sim" onclick="marcarItem(this)" type="radio">Gostei!
+        </label>
+        <label class="formulario__radio-container">
+          <input name="img9" id="img9-nao" onclick="marcarItem(this)" type="radio">Não gostei
+        </label>
+      </li>
+      <li class="grupo-de-imagens__item">
+        <img class="grupo-de-imagens__imagem" src="imagens/img10.png" alt="">
+        <label class="formulario__radio-container">
+          <input name="img10" id="img10-sim" onclick="marcarItem(this)" type="radio">Gostei!
+        </label>
+        <label class="formulario__radio-container">
+          <input name="img10" id="img10-nao" onclick="marcarItem(this)" type="radio">Não gostei
+        </label>
+      </li>
+      <li class="grupo-de-imagens__item">
+        <img class="grupo-de-imagens__imagem" src="imagens/img11.png" alt="">
+        <label class="formulario__radio-container">
+          <input name="img11" id="img11-sim" onclick="marcarItem(this)" type="radio">Gostei!
+        </label>
+        <label class="formulario__radio-container">
+          <input name="img11" id="img11-nao" onclick="marcarItem(this)" type="radio">Não gostei
+        </label>
+      </li>
+      <li class="grupo-de-imagens__item">
+        <img class="grupo-de-imagens__imagem" src="imagens/img12.png" alt="">
+        <label class="formulario__radio-container">
+          <input name="img12" id="img12-sim" onclick="marcarItem(this)" type="radio">Gostei!
+        </label>
+        <label class="formulario__radio-container">
+          <input name="img12" id="img12-nao" onclick="marcarItem(this)" type="radio">Não gostei
+        </label>
+      </li>
+      <li class="grupo-de-imagens__item">
+        <img class="grupo-de-imagens__imagem" src="imagens/img13.png" alt="">
+        <label class="formulario__radio-container">
+          <input name="img13" id="img13-sim" onclick="marcarItem(this)" type="radio">Gostei!
+        </label>
+        <label class="formulario__radio-container">
+          <input name="img13" id="img13-nao" onclick="marcarItem(this)" type="radio">Não gostei
+        </label>
+      </li>
+      <li class="grupo-de-imagens__item">
+        <img class="grupo-de-imagens__imagem" src="imagens/img14.png" alt="">
+        <label class="formulario__radio-container">
+          <input name="img14" id="img14-sim" onclick="marcarItem(this)" type="radio">Gostei!
+        </label>
+        <label class="formulario__radio-container">
+          <input name="img14" id="img14-nao" onclick="marcarItem(this)" type="radio">Não gostei
+        </label>
+      </li>
+      <li class="grupo-de-imagens__item">
+        <img class="grupo-de-imagens__imagem" src="imagens/img15.png" alt="">
+        <label class="formulario__radio-container">
+          <input name="img15" id="img15-sim" onclick="marcarItem(this)" type="radio">Gostei!
+        </label>
+        <label class="formulario__radio-container">
+          <input name="img15" id="img15-nao" onclick="marcarItem(this)" type="radio">Não gostei
+        </label>
+      </li>
+      <li class="grupo-de-imagens__item">
+        <img class="grupo-de-imagens__imagem" src="imagens/img16.png" alt="">
+        <label class="formulario__radio-container">
+          <input name="img16" id="img16-sim" onclick="marcarItem(this)" type="radio">Gostei!
+        </label>
+        <label class="formulario__radio-container">
+          <input name="img16" id="img16-nao" onclick="marcarItem(this)" type="radio">Não gostei
+        </label>
+      </li>
+    </ul>
 
-          <button class="botao botao_contorno botao_cor-perigo u-margem-esquerda-pequena" onclick="apagarTudo()">
-            Apagar Lista
-          </button>
-        </div>
+    <div role="alert" class="mensagem mensagem_cor-sucesso" style="display: none;">
+      <div class="mensagem__conteudo">
+        <h2 class="mensagem__titulo">Pronto!</h2>
+        <p class="mensagem__texto">Suas preferências já foram enviadas e serão utilizadas para ajudar na construção do
+          seu branding.</p>
       </div>
     </div>
 
-    <form class="formulario u-margem-inferior-media">
-      <fieldset>
-        <h2 class="titulo titulo_medio u-margem-inferior-media">Tasks do sistema:</h2>
-        <div id="lista1"></div>
-      </fieldset>
-    </form>
+    <button class="botao u-margem-superior-media" onclick="finalizar()">Finalizar</button>
 
-    <form onsubmit="criarItemNoChecklist(); return false">
-      <input autofocus autocomplete="off" type="text" id="item" class="formulario__input u-margem-inferior-pequena"
-        placeholder="Escreva um novo item">
-      <button class="botao botao_largura-total" id="botao" type="submit">Enviar</button>
-    </form>
   </section>
 
+
+
   <script src="script.js"></script>
+  <script>
+    function finalizar() {
+      document.querySelector('.mensagem').style.display = 'block';
+      document.querySelector('.grupo-de-imagens').style.display = 'none';
+    }
+  </script>
 </body>
 
 
