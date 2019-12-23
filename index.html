@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checklist</title>
+  <link rel="stylesheet" href="./digixui.css">
+  <link rel="stylesheet" href="./estilo.css">
+</head>
+
+<body class="pagina">
+  <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-analytics.js"></script>
+  <script src="configuracao-firebase.js"></script>
+
+  <section class="container container_pequeno">
+    <div class="grade">
+      <div class="grade__linha">
+        <div class="grade__coluna">
+          <h1 class="titulo">Checklist das funcionalidades do PapelZero</h1>
+        </div>
+
+        <div class="grade__coluna grade__coluna_estreita">
+          <button class="botao botao_contorno" onclick="desmarcarTodos()">
+            Desmarcar Tudo
+          </button>
+
+          <button class="botao botao_contorno botao_cor-perigo u-margem-esquerda-pequena" onclick="apagarTudo()">
+            Apagar Lista
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <form class="formulario u-margem-inferior-media">
+      <fieldset>
+        <h2 class="titulo titulo_medio u-margem-inferior-media">Tasks do sistema:</h2>
+        <div id="lista1"></div>
+      </fieldset>
+    </form>
+
+    <form onsubmit="criarItemNoChecklist(); return false">
+      <input autofocus autocomplete="off" type="text" id="item" class="formulario__input u-margem-inferior-pequena"
+        placeholder="Escreva um novo item">
+      <button class="botao botao_largura-total" id="botao" type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>
